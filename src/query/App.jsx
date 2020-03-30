@@ -1,15 +1,15 @@
-import React from 'react'
-import { connect } from 'react-redux'
+import React from 'react';
+import { connect } from 'react-redux';
 
-function App(){
-    return <div>query</div>
+function App() {
+    return <div>query</div>;
 }
 
 export default connect(
-    function mapStateToProps(state){
-        return state
+    function mapStateToProps(state) {
+        return state;
     },
-    function mapDispatchToProps(dispatch){
-        return { dispatch }
-    },
-)(App)
+    function mapDispatchToProps(dispatch) {
+        return { dispatch };
+    }
+)(App);

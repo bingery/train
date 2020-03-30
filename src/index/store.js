@@ -1,7 +1,7 @@
-import { createStore, combineReducers, applyMiddleware} from 'redux'
-import thunk from 'redux-thunk'
+import { createStore, combineReducers, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
 
-import reducers from './reducers'
+import reducers from './reducers';
 
 export default createStore(
     combineReducers(reducers),
@@ -9,4 +9,4 @@ export default createStore(
         from: '北京',
     },
     applyMiddleware(thunk)
-)
+);

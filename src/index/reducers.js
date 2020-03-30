@@ -1,6 +1,4 @@
-import {
-    ACTION_SET_FROM
-} from './actions'
+import { ACTION_SET_FROM } from './actions';
 export default {
     from(state = '北京', action) {
         const { type, payload } = action;
@@ -11,5 +9,5 @@ export default {
         }
 
         return state;
-    }
-}
+    },
+};
